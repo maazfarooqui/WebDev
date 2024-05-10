@@ -1,0 +1,45 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.image{
+    background-image: url(sigmadp.webp);
+    background-repeat: none;
+    background-size:cover;
+    height: 110px;
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+
+.time
+{
+    border-radius:3px ;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.467);
+    height: 20px;
+    width: 40px;
+    
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub{
+    display: flex;
+    gap:10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

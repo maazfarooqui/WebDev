@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+
+
+    <style>
+
+        .grandpa{
+            background-color: rgb(153, 153, 120);
+            padding: 30px;
+            margin: 20px;
+            border: 2px solid black;
+        }
+
+        .papa{
+        background-color: rgb(135, 117, 90);
+        padding: 30px;
+            margin: 20px;
+            border: 2px solid black;
+    }
+
+    .beta{
+        background-color: rgb(153, 196, 210);
+        padding: 30px;
+            margin: 20px;
+            border: 2px solid black;
+    }
+
+    </style>
+</head>
+<body>
+    
+    
+
+    <div class="grandpa">
+        <section class="papa"> 
+            <div class="beta">This is the beta</div>
+        </section>
+    </div>
+
+
+    <script>
+        // document.querySelector(".beta").addEventListener("click", (e)=>{         //selecting this causes the parent to also be selected
+        //     console.log(" beta is printed");                                     // solution= put "stop.propogation"
+        // })
+
+        // document.querySelector(".papa").addEventListener("click", (e)=>{        
+        //     console.log(" papa is printed");
+        // })
+
+
+        // document.querySelector(".beta").addEventListener("click", (e)=>{
+        //     console.log(" grandpa is printed");
+        // })
+
+         document.querySelector(".beta").addEventListener("click", (e)=>{    
+            e.stopPropagation();    
+            console.log(" beta is printed");                                    
+        })
+
+
+            document.querySelector(".papa").addEventListener("click", (e)=>{        
+            console.log(" papa is printed");
+        })
+
+
+        document.querySelector(".grandpa").addEventListener("click", (e)=>{
+            console.log(" grandpa is printed");
+        })
+
+
+        setInterval(()=>{
+            let num1 = Math.floor(Math.random()*256);
+            let num2 = Math.floor(Math.random()*256);
+            let num3 = Math.floor(Math.random()*256);
+            
+            document.querySelector(".beta").style.backgroundColor = `rgb(${num1}, ${num2}, ${num3})`;
+        }, 2000)
+
+
+    </script>
+    
+</body>
+</html>

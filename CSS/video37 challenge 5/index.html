@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website design layout</title>
+
+    <style>
+        body{
+            background-color: rgb(217, 217, 217);
+        }
+
+        nav {
+            background-color: lightseagreen;
+            width: 100%;
+            padding: 10px 0px 10px 3px ;
+            margin: 0px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            position: sticky;
+            z-index: 100;
+
+        }
+
+        ul li{
+            list-style: none;
+            display: inline;
+            padding: 30px 60px;
+            margin: 0px;
+        }
+
+        .boxes{
+            display: flex;
+            background-color: beige;
+        }
+
+        .box1{
+            background-color: rgb(39, 90, 90);
+            margin: 10px 5px;
+            height: 1680px;
+            width: 620px;
+            
+        }
+
+        .box2{
+            background-color: rgb(226, 132, 43);
+            margin: 10px 0px 0px auto;
+            height: 1680px;
+            width: 620px;
+        }
+
+
+        .info{
+            background-color: rgb(172, 112, 230);
+
+            text-align: center;
+            padding: 5px 5px 5px 5px;
+            height: 90px;
+            width: 540px;
+            position: relative;
+            left: 500px;
+            border-radius: 10px;
+
+        }
+
+        div >img{ 
+
+            height: 50px;
+            width: 50px;
+            position: fixed;
+            bottom: 5px;
+            right: 5px;
+
+            border-radius: 90px;
+      
+           
+        }
+
+        footer{
+            background-color: beige;
+            height: 70px;
+            width: auto;
+            margin: 10px;
+            justify-content: center;
+            padding: 10px;
+           display: flex;
+           align-items: center;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+            <li>Services</li>
+        </ul>
+    </nav>
+
+    <div class="boxes">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+
+    <div class="info">
+        <p style="font-size: 24px;">Hey welcome to my website</p>
+
+    </div>
+
+    <div >
+        <img src="logo.jpg" alt="website logo">
+    </div>
+
+    <footer>&copy; 2024 mywebsite. All rights reserved</footer>
+    
+</body>
+</html>

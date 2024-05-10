@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+
+    <style>
+
+        .container{
+            
+            background-color: aquamarine;
+            height: 50vh;
+            width: 50vw;
+            
+        }
+
+        .box{
+
+            background-color: bisque;
+            height: 10vh;
+            width: 10vw;
+            animation: secondanim 3s ease-in-out 1s 2 normal backwards,
+                        anim 3s cubic-bezier(0, 1.4, 1,-0.06)  1s 2 normal backwards;
+            /*long way of doing animation properties*/
+            /* 
+            animation-delay: 1s;
+            animation-duration: 3s;
+            animation-timing-function: cubic-bezier(0, 1.4, 1,-0.06);
+            animation-iteration-count: 2;
+            animation-direction: normal; 
+            animation-fill-mode: forwards; */
+
+
+        }
+
+        @keyframes secondanim {
+            0%{
+                transform: rotate(90deg);
+            }            
+            20%{
+                transform: rotate(180deg);
+            }
+
+            50%{
+                transform: rotate(270deg);
+            }
+
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+@keyframes anim {
+    from{
+
+    }
+
+    to{
+        transform: translateX(40vw);
+    }
+    
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+                BOX
+        </div>
+    </div>
+    
+</body>
+</html>

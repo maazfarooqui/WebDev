@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*element selector*/
+       
+        .red{
+            background-color: rgb(215, 124, 124);
+        }
+
+        #unique{
+            color: aqua;
+        }
+        /*this is a direct child styling in CSS*/
+        /*note that p should be directly inside of nav for this to work*/
+        nav > p{
+            background-color: rgb(0, 150, 100);
+        }
+
+        h1>p{
+            font-style: oblique;
+        }
+
+        /*descendent selection- a child within a child */
+        div p{
+            background-color: beige;
+        }
+
+        /*universal selector*/
+        *{
+            margin: 0;
+            padding: 0.1;
+                }
+
+
+        /*pseudo selector*/
+        a:visited{
+            color: rgb(1, 150, 46);
+        }
+
+        a:hover{
+            color: rgb(189, 19, 0);
+        }
+
+        /*applies to p where p is the first child*/
+        p:first-child{
+            background-color: rgb(0, 255, 170);
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div id="unique" class="red">
+        I am a div
+    </div>
+
+    <nav>
+        <p>This is an paragraph element inside of nav element. this acts as a child for nav. we can apply style properties to the child. refer to line 18 for this.</p>
+
+        <h1><p>This is another paragraph element in nav element but this paragraph element will not have any styling properties applied to as it not the direct child of the nav element of it.</p></h1>
+
+    </nav>
+    
+
+    <div>
+        <article>
+            <p>
+                this is a way of descendent selection
+            </p>
+        </article>
+    </div>
+
+    <main>
+        <p>this is the first child of this class</p>
+        <p>this is not the first child of this class</p>
+        <p>neither is this</p>
+    </main>
+
+
+    <div>
+        <a href="https://theathletic.com/">Visit athletic</a>
+        <br>
+        <a href="https:www.facebook.com">visit facebook</a>
+    </div>
+
+</body>
+</html>

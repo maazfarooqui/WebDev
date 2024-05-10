@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows and Outlines in CSS</title>
+
+    <style>
+        .box{
+            border: 2px solid palegoldenrod;
+            padding: 34px;
+            box-shadow: 5px 10px 10px gray;
+
+
+        }
+
+        .text-element{
+            text-shadow: 8px 4px 6px rgb(169 4 4);
+            
+        }
+
+        #outlines{
+            outline: 2px solid rgb(122, 8, 122);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        I am a box
+    </div>
+
+    <p class="text-element">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, voluptate dolor! Minus impedit fugit enim suscipit sequi dicta officiis aut, voluptatem excepturi.
+    </p>
+
+    <p id="outlines">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, id.
+    </p>
+    
+</body>
+</html>

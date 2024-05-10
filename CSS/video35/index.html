@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+
+</head>
+    <style>
+
+        .box::first-line{
+            background-color: antiquewhite;
+        }
+
+        [data-type="primary"]{
+            background-color: red;
+
+        }
+
+        .classes::before{
+            content: 'this is how you insert para before';
+            background-color: aqua;
+        }
+
+
+        ::selection{
+
+            background-color: black;
+            color: aqua;
+                }
+        
+
+    </style>
+
+
+
+<body>
+
+    <div class="classes">
+
+        <div data-type="primary" class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum reiciendis aut accusamus minus asperiores provident alias voluptatum libero, quaerat quos distinctio deleniti. Dolorum aliquam alias, illo tenetur accusamus dolor officia ipsum libero qui!</div>
+        <div class="box">2nd Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ullam nostrum earum, quisquam enim, quia culpa modi perspiciatis fugiat qui tempore quidem!</div>
+        <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta placeat quia saepe expedita ut voluptates illo iusto quidem velit? Harum sint esse quisquam, molestiae corrupti nulla reprehenderit possimus consequatur, porro et deserunt at!
+        </div>
+    </div>
+    
+</body>
+</html>

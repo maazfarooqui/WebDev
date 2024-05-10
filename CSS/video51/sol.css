@@ -1,0 +1,55 @@
+
+.container{
+    background-color: antiquewhite;
+    height: 50vh;
+    width: 50vw;
+    position: relative;
+
+
+}
+
+.ball{
+    background-color: aquamarine;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 90px;
+    animation: xanim 3s linear infinite alternate,
+    yanim 10s ease-out infinite alternate;
+    
+
+}
+
+
+
+@keyframes xanim {
+
+   from{
+    left:0%;
+   }
+
+   to{
+    left:100%;
+   }
+    
+}
+
+@keyframes yanim{
+
+  from{
+    bottom: 100%;
+  }
+
+  to{
+    bottom: 100%;
+  }
+
+
+    
+}

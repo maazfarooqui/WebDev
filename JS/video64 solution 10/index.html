@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let rand = Math.random()*100
+        
+        if(rand<33){
+            second='Engine';
+        }
+
+        else if(rand<66 && rand>=33){
+            second='Foods'
+        }
+
+        else{
+            second='Garments'
+        }
+
+
+        let rands = Math.random()*100
+        if(rands<33){
+            first='crazy';
+        }
+
+        else if(rands<66 && rands>=33){
+            first='amazing'
+        }
+
+        else{
+            first='fire'
+        }
+
+        let rand2 = Math.random()*100
+
+        if(rand2<33){
+            third='Bros';
+        }
+
+        else if(rand2<66 && rand2>=33){
+            third='Limited'
+        }
+
+        else{
+            third='Hub'
+        }
+
+        console.log(first +" "+ second + " "+ third)
+
+
+    </script>
+    
+</body>
+</html>
